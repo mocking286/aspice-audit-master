@@ -1,0 +1,8 @@
+﻿*.pem
+aspice-audit-memory.json
+trace_doc_extract/
+tools/pdf_extract/
+edge-verify-profile*/
+*.log
+.DS_Store
+Thumbs.db
