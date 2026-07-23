@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>aspice-audit-master</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="appTitle">
+      <div class="brand-row">
+        <img class="app-icon" src="icons/spinning-top-64.png" alt="">
+        <div>
+          <p class="eyebrow">Local ASPICE Review</p>
+          <h1 id="appTitle">aspice-audit-master</h1>
+        </div>
+      </div>
+      <p class="hero-copy">打开 ASPICE 审核工作台后先进入知识库初始页。证据文件在工作台页面内上传，解析完成后自动进入展示页。</p>
+    </section>
+
+    <label class="upload-card" for="evidenceFiles">
+      <span class="upload-kicker">Optional check</span>
+      <span class="upload-title">预选证据文件</span>
+      <span class="upload-note">用于入口校验；真正上传和解析在工作台页面内完成。</span>
+      <input id="evidenceFiles" type="file" multiple accept=".doc,.docx,.ppt,.pptx,.xls,.xlsx,.xlsm,.pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel.sheet.macroEnabled.12,application/pdf">
+    </label>
+
+    <div id="fileSummary" class="summary">尚未选择文件。</div>
+
+    <div class="bridge-card">
+      <div>
+        <span class="upload-kicker">Step 2</span>
+        <strong>Codex Bridge</strong>
+        <span id="bridgeStatus" class="bridge-status">未检查</span>
+      </div>
+      <button id="checkBridge" class="secondary" type="button">检查</button>
+    </div>
+
+    <button id="openApp" type="button">打开知识库初始页</button>
+    <p class="footnote">本地工作台：C:\Users\YuMeng Li\OneDrive - JE\Desktop\aspice-audit-master-refactored\aspice-audit-master.html</p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
