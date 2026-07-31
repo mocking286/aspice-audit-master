@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071d2b">
+  <meta name="description" content="面向 Automotive SPICE 内审员的证据、评估、复核与报告工作台">
+  <title>AuditFlow AI · ASPICE 内审工作台</title>
+  <link rel="stylesheet" href="./styles.css?v=7">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#/dashboard" aria-label="AuditFlow AI 首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>AuditFlow</strong><small>ASPICE intelligence</small></span>
+      </a>
+      <nav class="side-nav" aria-label="主导航">
+        <p class="nav-label">工作台</p>
+        <a href="#/dashboard" data-nav="dashboard"><span data-icon="grid"></span>审核总览</a>
+        <a href="#/standard" data-nav="standard"><span data-icon="shield"></span>ASPICE 评估</a>
+        <a href="#/custom" data-nav="custom"><span data-icon="layers"></span>自定义审核</a>
+        <p class="nav-label">专业能力</p>
+        <a href="#/library" data-nav="library"><span data-icon="book"></span>标准知识库</a>
+        <a href="file:///C:/Users/YuMeng%20Li/OneDrive%20-%20JE/Desktop/aspice-audit-master-refactored/aspice-audit-master.html?page=evidence" data-action="open-aspice-master"><span data-icon="flask"></span>aspice-audit-master<span class="external">↗</span></a>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="usage-card">
+          <span class="eyebrow"><i class="pulse-dot"></i> 本地优先</span>
+          <strong>AI 评估就绪</strong>
+          <p>项目数据保存在当前浏览器，模型连接由你控制。</p>
+        </div>
+        <a href="#/settings" class="profile-link" data-nav="settings">
+          <span class="avatar">MM</span>
+          <span><strong>Maple Mock</strong><small>首席审核员</small></span>
+          <span data-icon="settings"></span>
+        </a>
+      </div>
+    </aside>
+
+    <section class="workspace">
+      <header class="topbar">
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="展开导航"><span data-icon="menu"></span></button>
+        <div class="breadcrumbs" id="breadcrumbs"></div>
+        <div class="top-actions">
+          <label class="global-search"><span data-icon="search"></span><input id="globalSearch" type="search" placeholder="搜索项目、证据、过程或评估师记录…"><kbd>⌘ K</kbd></label>
+          <span class="ai-status" id="aiStatus"><i></i>AI 就绪</span>
+          <button class="icon-btn" id="notificationsBtn" aria-label="通知"><span data-icon="bell"></span><b></b></button>
+        </div>
+      </header>
+      <main id="app" tabindex="-1"></main>
+    </section>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div id="drawerRoot"></div>
+  <div class="toast-stack" id="toastRoot" aria-live="polite"></div>
+  <input type="file" id="evidencePicker" hidden multiple accept=".pdf,.docx,.pptx,.xlsx,.xlsm,.txt,.md,.csv,.json,.html">
+  <script src="./vendor/jszip.min.js"></script>
+  <script src="./tmm-assessment-data.js?v=1"></script>
+<script src="./external-assessment-data.js?v=2"></script>
+  <script src="./app.js?v=12"></script>
+</body>
+</html>

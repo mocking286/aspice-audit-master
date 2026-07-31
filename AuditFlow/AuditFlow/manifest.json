@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "AuditFlow v4.0",
+  "version": "4.0.0",
+  "description": "Local-first Automotive SPICE audit evidence, assessment, review, and reporting workspace.",
+  "action": { "default_title": "Open AuditFlow v4.0" },
+  "background": { "service_worker": "background.js" },
+  "host_permissions": ["http://127.0.0.1/*", "http://localhost/*"],
+  "content_security_policy": { "extension_pages": "script-src 'self'; object-src 'self'" }
+}
