@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="ASPICE assistant mascot">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#edf3fb"/>
+      <stop offset="1" stop-color="#cbd7e8"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#e8eaf2"/>
+      <stop offset="1" stop-color="#aeb5c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="25" fill="url(#bg)"/>
+  <path d="M16 31 38 39 28 17c-8 2-12 7-12 14Zm96 0-22 8 10-22c8 2 12 7 12 14Z" fill="#343a4b"/>
+  <path d="M27 51c0-23 16-34 37-34 22 0 37 11 37 34v30c0 20-16 34-37 34-21 0-37-14-37-34Z" fill="#f8f1ee"/>
+  <path d="M25 58c2-24 12-39 39-39 25 0 37 12 39 38-8-7-15-12-23-15-10 9-29 15-55 16Z" fill="url(#hair)"/>
+  <path d="M26 66c13-1 31-8 41-19 7 7 18 12 35 15v16c-6-2-11-5-15-8v20l-13-9-10 21-10-21-13 9V70c-5 4-10 7-15 8Z" fill="url(#hair)"/>
+  <ellipse cx="47" cy="68" rx="9" ry="11" fill="#f6bf3e"/>
+  <ellipse cx="81" cy="68" rx="9" ry="11" fill="#f6bf3e"/>
+  <ellipse cx="48" cy="69" rx="3" ry="5" fill="#4d3124"/>
+  <ellipse cx="80" cy="69" rx="3" ry="5" fill="#4d3124"/>
+  <path d="M57 88c4 4 10 4 14 0" fill="none" stroke="#9e5d62" stroke-width="3" stroke-linecap="round"/>
+  <path d="M31 125c4-19 17-29 33-29 17 0 30 10 34 29Z" fill="#727d95"/>
+  <path d="M52 98h24l7 27H45Z" fill="#d7dce8"/>
+  <path d="m59 101 5 8 5-8" fill="none" stroke="#576176" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="28" cy="99" r="6" fill="#7bc7b7"/>
+  <path d="m25.5 99 1.8 1.8 3.6-4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
