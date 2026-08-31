@@ -13,6 +13,6 @@ ASPICE audit assistant prototype for local evidence parsing, Helix ALM snapshot 
 
 ## Notes
 
-Original Sharpen360 Trace PDF files and extracted text are not included because the target repository is public. The generated gap report summarizes the uploaded reference materials without publishing the source documents.
+The generated gap report summarizes the uploaded reference materials without publishing the source documents.
 
 Do not commit local credentials, Helix passwords, Codex/OpenAI keys, `.pem` extension private keys, or `aspice-audit-memory.json`.
